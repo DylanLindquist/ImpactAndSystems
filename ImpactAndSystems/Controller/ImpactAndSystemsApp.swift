@@ -8,10 +8,13 @@
 import SwiftUI
 
 @main
-struct ImpactAndSystemsApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
+struct ImpactAndSystemsApp: App
+{
+    var body: some Scene
+    {
+        WindowGroup
+        {
+            ImpactAndSystemsView()
         }
     }
 }

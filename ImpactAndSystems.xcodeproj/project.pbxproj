@@ -11,6 +11,10 @@
 		ECEE05E825797E35000EDA77 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEE05E725797E35000EDA77 /* ContentView.swift */; };
 		ECEE05EA25797E36000EDA77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECEE05E925797E36000EDA77 /* Assets.xcassets */; };
 		ECEE05ED25797E36000EDA77 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECEE05EC25797E36000EDA77 /* Preview Assets.xcassets */; };
+		ECEE05FD2579800D000EDA77 /* ImpactDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEE05FC2579800D000EDA77 /* ImpactDetail.swift */; };
+		ECEE06012579817F000EDA77 /* ImpactData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEE06002579817F000EDA77 /* ImpactData.swift */; };
+		ECEE06062579839C000EDA77 /* ComputingImpact.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEE06052579839C000EDA77 /* ComputingImpact.swift */; };
+		ECEE060A2579845E000EDA77 /* ImpactAndSystemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEE06092579845E000EDA77 /* ImpactAndSystemsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		ECEE05E925797E36000EDA77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECEE05EC25797E36000EDA77 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ECEE05EE25797E36000EDA77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECEE05FC2579800D000EDA77 /* ImpactDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactDetail.swift; sourceTree = "<group>"; };
+		ECEE06002579817F000EDA77 /* ImpactData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactData.swift; sourceTree = "<group>"; };
+		ECEE06052579839C000EDA77 /* ComputingImpact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputingImpact.swift; sourceTree = "<group>"; };
+		ECEE06092579845E000EDA77 /* ImpactAndSystemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactAndSystemsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +79,9 @@
 			isa = PBXGroup;
 			children = (
 				ECEE05E925797E36000EDA77 /* Assets.xcassets */,
+				ECEE05E725797E35000EDA77 /* ContentView.swift */,
 				ECEE05EE25797E36000EDA77 /* Info.plist */,
+				ECEE060325798189000EDA77 /* Model */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -80,9 +90,19 @@
 			isa = PBXGroup;
 			children = (
 				ECEE05E525797E35000EDA77 /* ImpactAndSystemsApp.swift */,
-				ECEE05E725797E35000EDA77 /* ContentView.swift */,
+				ECEE06092579845E000EDA77 /* ImpactAndSystemsView.swift */,
+				ECEE05FC2579800D000EDA77 /* ImpactDetail.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		ECEE060325798189000EDA77 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ECEE06002579817F000EDA77 /* ImpactData.swift */,
+				ECEE06052579839C000EDA77 /* ComputingImpact.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,8 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECEE06062579839C000EDA77 /* ComputingImpact.swift in Sources */,
+				ECEE05FD2579800D000EDA77 /* ImpactDetail.swift in Sources */,
 				ECEE05E825797E35000EDA77 /* ContentView.swift in Sources */,
 				ECEE05E625797E35000EDA77 /* ImpactAndSystemsApp.swift in Sources */,
+				ECEE06012579817F000EDA77 /* ImpactData.swift in Sources */,
+				ECEE060A2579845E000EDA77 /* ImpactAndSystemsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +310,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ImpactAndSystems/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ImpactAndSystems/Info.plist;
+				INFOPLIST_FILE = ImpactAndSystems/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,7 +331,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ImpactAndSystems/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ImpactAndSystems/Info.plist;
+				INFOPLIST_FILE = ImpactAndSystems/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
